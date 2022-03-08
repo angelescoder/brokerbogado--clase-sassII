@@ -1,0 +1,240 @@
+@import url(./_variables.scss);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  background-image: linear-gradient(#78be90, whitesmoke);
+  color: gray;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: "Old Standard TT", serif;
+}
+
+.subir {
+  height: 50px;
+  width: 20px;
+  border: 2px;
+  position: fixed;
+  right: 30px;
+  bottom: 20px;
+}
+
+/* footer  */
+.final {
+  height: 100%;
+  width: 100%;
+  background-color: #78be90;
+}
+
+.ley {
+  padding: 20px;
+  text-align: center;
+  text-transform: lowercase;
+  color: whitesmoke;
+  font-size: 20px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.redes1 {
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.maps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.dir {
+  margin-top: 10%;
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.fiscal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* bucles*/
+.servicio-1 {
+  background-color: #78be90;
+  padding: 10px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.servicio-2 {
+  background-color: #78be90;
+  padding: 10px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.servicio-3 {
+  background-color: #78be90;
+  padding: 10px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.servicio-4 {
+  background-color: #78be90;
+  padding: 10px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.servicio-5 {
+  background-color: #78be90;
+  padding: 10px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+/* each*/
+.hogar-fondo {
+  width: 320px;
+  height: 320px;
+  background-image: url("../images/hogar.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.automovil-fondo {
+  width: 320px;
+  height: 320px;
+  background-image: url("../images/automovil.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.vida-fondo {
+  width: 320px;
+  height: 320px;
+  background-image: url("../images/vida.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.empresarios-fondo {
+  width: 320px;
+  height: 320px;
+  background-image: url("../images/empresarios.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.comunicate, .comunicate--numero, .comunicate--msj {
+  background-color: black;
+  padding-top: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.comunicate--msj {
+  text-transform: uppercase;
+  color: blue;
+}
+
+.comunicate--numero {
+  color: red;
+}
+
+/*mixin*/
+.box {
+  width: 100%;
+  height: 50px;
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.btn--red1 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: red;
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: gray;
+  font-size: 50px;
+  font-family: "Old Standard TT", serif;
+}
+
+.btn--red2 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #5b5beb;
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: gray;
+  font-size: 50px;
+  font-family: "Old Standard TT", serif;
+}
+
+.btn--red3 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #357c35;
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: gray;
+  font-size: 50px;
+  font-family: "Old Standard TT", serif;
+}
+
+.btn--red4 {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #ebeb4d;
+  text-transform: uppercase;
+  padding-top: 20px;
+  color: gray;
+  font-size: 50px;
+  font-family: "Old Standard TT", serif;
+}
+
+.seguros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=estilos.css.map */

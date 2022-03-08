@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+$comunicate: black;
+$size:10px;
+$color_letra: whitesmoke;
+$color_encabezado:gray;
+$color_logo: rgb(120, 190, 144);
+
+.logo{
+    background-image: linear-gradient(  $color_logo, $color_letra);
+    color: $color_encabezado;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-family: 'Old Standard TT', serif;  
+    
+}
+
+.subir{
+    height: 50px;
+    width: 20px;
+    border: 2px;
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+}
+
+/* footer  */
+
+
+
+.final{
+    height: 100%;
+    width: 100%;
+    background-color:$color_logo;
+}
+.ley{
+    padding: 20px;
+    text-align: center;
+    text-transform: lowercase;
+    color: $color_letra;
+    font-size: 20px;  
+}
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.redes1{
+    background-color: $comunicate;
+    color: $color_letra;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.maps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.dir{
+    margin-top: 10%;
+    text-align: center;
+    text-transform: uppercase;
+    color:$color_letra;   
+}
+.fiscal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+/* bucles*/
+$i:1;
+@for $i from 1 through 5{
+    .servicio-#{$i}{
+        background-color: $color_logo;
+        padding: 10px;
+        text-transform: uppercase;
+        color: $color_letra;
+        font-weight: bold;
+
+        
+    }
+}
+ 
+/* each*/
+
+@each $servicio in hogar, automovil, vida, empresarios {
+    .#{$servicio}-fondo{
+        width: 320px;
+        height: 320px;
+        background-image: url("../images/#{$servicio}.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        
+        
+    }
+    
+}
+.comunicate{
+    background-color: $comunicate;
+    padding-top: $size;
+    text-align: center;
+    text-transform: uppercase;  
+    font-weight: bold;
+    
+}
+
+.comunicate--msj{
+    @extend.comunicate;
+    text-transform: uppercase; 
+    color: blue;
+    
+}
+.comunicate--numero{
+    @extend.comunicate;
+    color: red;
+}
+
+/*mixin*/
+@mixin tamaño ($width, $height,$color,$central,$size,$may) {
+    width: $width;
+    height: $height;
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase
+    
+}
+.box{
+    @include tamaño(100%,($size*5), rgb(79, 224, 21), justify, ($size*5), none);
+}
+// maps*/
+$redes: (
+    red1: red,
+    red2: rgb(91, 91, 235),
+    red3: rgb(53, 124, 53),
+    red4: rgb(235, 235, 77),
+);
+
+@each $red, $font in $redes {
+    .btn--#{$red} {
+        height: 100px;
+        width: 100%;
+        text-align: center;
+        background-color: $font;
+        text-transform: uppercase;
+        padding-top: 20px;
+        color: $color_encabezado;
+        font-size: 50px;
+        font-family: 'Old Standard TT', serif; 
+    }
+    
+}
+
+.seguros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+@import url(./_variables.scss);
+
+
+
